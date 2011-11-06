@@ -22,7 +22,7 @@ public class TotalFileSizeSequential {
     
     public static void main(String[] args) {
         final long start = System.nanoTime();
-        final long total = new TotalFileSizeSequential().getTotalSizeOfFilesInDir(new File("/usr"));
+        final long total = new TotalFileSizeSequential().getTotalSizeOfFilesInDir(new File("/etc"));
         final long end = System.nanoTime();
         System.out.println("Total Size: " + total);
         System.out.println("Total Time" + (end - start) / 1.0e9);
